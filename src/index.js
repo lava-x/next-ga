@@ -51,9 +51,5 @@ export default (code, Router, { localhost = "localhost" } = {}) => Page => {
     }
   }
 
-  if (Page.getInitialProps) {
-    WithAnalytics.getInitialProps = Page.getInitialProps;
-  }
-
   return WithAnalytics;
 };
